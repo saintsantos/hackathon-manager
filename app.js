@@ -17,6 +17,10 @@ app.get('/', function(req, res) {
   res.render('app');
 });
 
+app.get('/', function(req, res) {
+  console.log('Rendering idnex.ejs');
+  res.render('index');
+});
 
 
 http.listen(3000, function() {
